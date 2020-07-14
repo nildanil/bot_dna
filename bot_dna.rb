@@ -82,7 +82,7 @@ rna_open_read = get_open_read_rna(rna)
 rna_new= Bio::Sequence::NA.new(rna_open_read)
 rna_new.translate.codes.join("-")
 end
-token = '1352839940:AAErfrfImdrECOdwcyJhLzFXpTSdggVfHGE'
+token = 'token'
 
 Telegram::Bot::Client.run(token) do |bot|
   bot.listen do |message|
